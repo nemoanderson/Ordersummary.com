@@ -1,0 +1,3 @@
+# to ignore files type in terminal touch .gitignore
+# ignore all txt files
+*.txt

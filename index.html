@@ -8,14 +8,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="main.css" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.2.1 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
-    />
+    />-->
   </head>
 
   <body>
@@ -23,31 +24,55 @@
       <!-- place navbar here -->
     </header>
     <main>
-      <!--Background-->
-      <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437">
-        <path
-          fill="#D6E1FF"
-          fill-rule="evenodd"
-          d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"
+      <div class="card">
+        <!--Background
+        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437">
+          <path
+            fill="#D6E1FF"
+            fill-rule="evenodd"
+            d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"
+          />
+        </svg>-->
+        <!--Image-->
+        <img
+          class="hero-image"
+          src="Image/illustration-hero.svg"
+          alt="Illustrated woman with headphone on dancing to music on her phone with purple music notes in blue background and skyline"
+          role="img"
         />
-      </svg>
-      <!--Image-->
-      <img
-        src="Image/illustration-hero.svg"
-        alt="Illustrated woman with headphone on dancing to music on her phone with purple music notes in blue background and skyline"
-        role="img"
-      />
-      <h1>Order Summary</h1>
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
-      <h2>Annual Plan</h2>
-      <p>$59.99/year</p>
-      <button role="button">Change</button>
-      <button role="button">Proceed to Payment</button>
-      <button role="button">Cancel Order</button>
+        <div class="container">
+          <h2 class="title">Order Summary</h2>
+        </div>
+        <p class="order-description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="plan-container">
+          <!--Music Icon-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path
+                fill="#717FA6"
+                fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+              />
+            </g>
+          </svg>
+          <div class="plan-description">
+            <strong>Annual Plan</strong>
+            <p>$59.99/year</p>
+          </div>
+          <button role="button">Change</button>
+        </div>
+        <button class="proceed-button order-buttons" role="button">
+          Proceed to Payment
+        </button>
+        <button class="cancel-button order-buttons" role="button">
+          Cancel Order
+        </button>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->
